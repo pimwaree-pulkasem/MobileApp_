@@ -3,7 +3,7 @@ import 'package:first_project/page_answer/answer1.dart';
 import 'package:first_project/page_answer/answer2.dart';
 import 'package:first_project/page_answer/answer3.dart';
 import 'package:first_project/page_answer/answer4.dart';
-
+import 'package:first_project/page_answer/answer_portal.dart';
 void main() {
   runApp(const MyApp());
 }
@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.amber),
         useMaterial3: true,
       ),
-      home: Answer4(),);
+      home: AnswerPortal(),);
   }
 }
 
@@ -38,7 +38,7 @@ class HomeScreen extends StatelessWidget {
       backgroundColor: const Color.fromRGBO(255, 255, 255, 1),
 
       body: 
-      Answer4(),
+      AnswerPortal(),
 
 
     );
