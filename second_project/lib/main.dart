@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-//import 'package:second_project/mywidget_state.dart';
+import 'package:second_project/answer1.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,63 +18,26 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.amber),
         useMaterial3: true,
       ),
-      home: const MyWidget(),);
+      home: const Answer1());
   }
 }
 
-class MyWidget extends StatefulWidget {
-  const MyWidget({super.key});
-
-  @override
-  State<MyWidget> createState() => MyWidgetState();
-}
-class MyWidgetState extends State<MyWidget> {
-  final _formKey = GlobalKey<FormState>();
+class HomeScreen extends StatelessWidget {
+  const HomeScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Simple Form'),
-      ), // AppBar
-      body: Form(
-        key: _formKey,
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            TextFormField(
-              decoration: const InputDecoration(
-                labelText: 'Name',
-              ),
-              validator: (value) {
-                if (value == null || value.isEmpty) {
-                  return 'Please enter your name';
-                }
-                return null;
-              },
-            ),
-            TextFormField(
-              decoration: const InputDecoration(
-                labelText: 'Email',
-              ),
-              validator: (value) {
-                if (value == null || value.isEmpty) {
-                  return 'Please enter your email';
-                }
-                return null;
-              },
-            ),
-            TextButton(
-              onPressed: () {
-                if (_formKey.currentState!.validate()) {
-                  print('Form is valid');
-                }
-              },
-              child: const Text('Save'),
-            ),
-          ],
-        ),
-      ), // Form
-    ); // 
-  }}
+        title: Text('First Time App'),
+        backgroundColor: const Color.fromARGB(255, 255, 255, 255),
+      ),
+      backgroundColor: const Color.fromRGBO(255, 255, 255, 1),
 
+      body: 
+      Answer1(),
+
+
+    );
+  }
+}
