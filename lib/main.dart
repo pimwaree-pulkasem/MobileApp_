@@ -7,6 +7,7 @@ import 'package:first_project/page_answer/answer4.dart';
 import 'package:first_project/page_answer/answer_portal.dart';*/
 import 'package:first_project/Answer1/screen/AirDataScreen.dart';
 import 'package:first_project/Answer2/fastapi/frontend/ProductListScreen.dart';
+import 'package:first_project/Instagram_Profile_UI/screen/profile_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -25,7 +26,8 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.amber),
         useMaterial3: true,
       ),
-      home: ProductListScreen(),);
+      home: ProfilePage(),
+    );
   }
 }
 
@@ -42,7 +44,7 @@ class HomeScreen extends StatelessWidget {
       backgroundColor: const Color.fromRGBO(255, 255, 255, 1),
 
       body: 
-      ProductListScreen(),
+      ProfilePage(),
 
 
     );

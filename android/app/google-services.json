@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "843934890958",
+    "project_id": "alert-ground-454706-h3",
+    "storage_bucket": "alert-ground-454706-h3.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:843934890958:android:9b18faee294e098d4bc99f",
+        "android_client_info": {
+          "package_name": "first.android.package"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBnL54k0b3dMmdzDu4j-r15paz8nf47VfE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
