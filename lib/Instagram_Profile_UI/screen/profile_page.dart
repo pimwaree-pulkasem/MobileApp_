@@ -29,7 +29,27 @@ class ProfilePage extends StatelessWidget {
                     ],
                   ),
                   ActionButtons(),
-                  const Divider(),
+                  const Divider(height: 1), 
+                  Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 10),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      children: const [
+                        Icon(Icons.grid_on_sharp, size: 26),
+                        Icon(
+                          Icons.video_library_outlined,
+                          color: Colors.grey,
+                          size: 26,
+                        ),
+                        Icon(
+                          Icons.assignment_ind_outlined,
+                          color: Colors.grey,
+                          size: 26,
+                        ),
+                      ],
+                    ),
+                  ),
+                  const Divider(height: 1),
                   PostGrid(),
                 ],
               ),
